@@ -45,7 +45,7 @@ The prediction model was trained using historical traffic data provided by the I
 Open your terminal and get in the folder wherever you prefer installing the project.
 1. Clone the repository:
     
-   `git clone [https://github.com/HakanK1/Traffic-Assistant-Istanbul.git](https://github.com/HakanK1/Traffic-Assistant-Istanbul.git)`
+   `git clone https://github.com/HakanK1/Traffic-Assistant-Istanbul.git`
    `cd Traffic-Assistant-Istanbul`
 
 2. Ensure that docker is active (notice the text "Engine running" on the bottom left in the app indicating active status), then build and start the infrastructure:
