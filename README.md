@@ -51,8 +51,26 @@ The prediction model was trained using historical traffic data provided by the I
      docker-compose up -d --build
    
 3. Access the services:
-     Copy and paste the address below to run the frontend and access the application with everything.
+     Copy and paste the address below to run the frontend and access the application with everything (docker must be running everytime you want to run the application).
      Frontend Interface: http://localhost:4200
      Backend API: http://localhost:8080
    
 4. To stop the application and remove containers, run: docker-compose down
+
+## Optional: Machine Learning Development Setup
+
+If you wish to retrain the XGBoost model or explore the data engineering pipeline, you need to set up the Python environment locally.
+
+After orchestrating everything with docker:
+1. Navigate to the Machine Learning directory:
+   cd ml
+
+2. Create a virtual environment:
+    python -m venv venv
+
+3. Activate the virtual environment:
+    Windows: .\venv\Scripts\activate
+    Linux/Mac: source venv/bin/activate
+
+4. install the required dependencies:
+   pip install -r requirements.txt
