@@ -1,0 +1,27 @@
+# Big data files
+*.parquet
+*.csv
+
+# old ml files
+ml/export_to_onnx.py
+ml/download.py
+ml/export_encoder.py
+ml/predict_test.py
+ml/notebooks/model_training.ipynb
+ml/notebooks/eda.ipynb
+
+# Op. System and IDE Artifacts
+.DS_Store
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# Python virtual environment
+venv/
+
+# database
+ml/postgresql

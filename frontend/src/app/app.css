@@ -1,0 +1,62 @@
+:host {
+  font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.modern-header {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); /* dark navy-blue gradient. */
+  color: #f8fafc;
+  padding: 20px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* A shadow that adds depth below */
+  position: relative;
+  z-index: 1000; /* keeping it above the Leaflet map */
+  border-bottom: 3px solid #3b82f6; /* A thin, bright blue line underneath */
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.app-title .icon {
+  font-size: 32px;
+}
+
+.app-subtitle {
+  margin: 10px 0 0 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #cbd5e1; /* easy on the eyes light gray */
+}
+
+.app-subtitle b {
+  color: #3b82f6; /* A and B */
+  font-weight: 600;
+}
+
+
+.map-container {
+  /* Fits the map to the full screen by subtracting the header height (about 90px) from the page height. */
+  height: calc(100vh - 96px); 
+  width: 100%;
+  background-color: #e2e8f0; /* The background shown while the map is loading */
+}
+
+/* Modern Touches for Leaflet Popup (Balloon) */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
