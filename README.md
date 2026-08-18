@@ -42,20 +42,21 @@ The prediction model was trained using historical traffic data provided by the I
 
 ### Running the Application
 
+Open your terminal and get in the folder wherever you prefer installing the project.
 1. Clone the repository:
     
-   git clone [https://github.com/HakanK1/Traffic-Assistant-Istanbul.git](https://github.com/HakanK1/Traffic-Assistant-Istanbul.git)
-   cd Traffic-Assistant-Istanbul
+   `git clone [https://github.com/HakanK1/Traffic-Assistant-Istanbul.git](https://github.com/HakanK1/Traffic-Assistant-Istanbul.git)`
+   `cd Traffic-Assistant-Istanbul`
 
 2. Ensure that docker is active (notice the text "Engine running" on the bottom left in the app indicating active status), then build and start the infrastructure:
-     docker-compose up -d --build
+     `docker-compose up -d --build`
    
 3. Access the services:
      Copy and paste the address below to run the frontend and access the application with everything (docker must be running everytime you want to run the application).
-     Frontend Interface: http://localhost:4200
-     Backend API: http://localhost:8080
+     `Frontend Interface: http://localhost:4200`
+     `Backend API: http://localhost:8080`
    
-4. To stop the application and remove containers, run: docker-compose down
+4. To stop the application and remove containers, run: `docker-compose down`
 
 ## Optional: Machine Learning Development Setup
 
@@ -63,14 +64,14 @@ If you wish to retrain the XGBoost model or explore the data engineering pipelin
 
 After orchestrating everything with docker:
 1. Navigate to the Machine Learning directory:
-   cd ml
+   `cd ml`
 
 2. Create a virtual environment:
-    python -m venv venv
+    `python -m venv venv`
 
 3. Activate the virtual environment:
-    Windows: .\venv\Scripts\activate
-    Linux/Mac: source venv/bin/activate
+    Windows: `.\venv\Scripts\activate`
+    Linux/Mac: `source venv/bin/activate`
 
 4. install the required dependencies:
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
